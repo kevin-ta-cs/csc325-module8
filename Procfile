@@ -1,0 +1,1 @@
+web: gunicorn csc325Djangoproj.wsgi:application
