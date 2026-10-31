@@ -14,4 +14,7 @@ def about(request):
     )
 @api_view(["GET"])
 def hello_api(request):
-    return Response({"message": "Hello from Kevin's API!"})
+    return Response({
+        "message": "Hello from Kevin's API!",
+        "course": "CSC325",
+    })
