@@ -11,5 +11,8 @@ class ApiTests(TestCase):
         response = self.client.get(reverse("hello_api"))
         self.assertEqual(
             response.json(),
-            {"message": "Hello from Kevin's API!"},
+            {
+                "message": "Hello from Kevin's API!",
+                "course": "CSC325",
+            },
         )
